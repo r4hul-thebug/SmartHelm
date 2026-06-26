@@ -6,7 +6,7 @@ This project was developed as part of the **Sensor & Transducer Lab (January –
 
 ---
 
-## 🎯 Motivation & Objectives
+## Motivation & Objectives
 Road traffic accidents remain a leading cause of mortality, particularly for two-wheeler riders. The "golden hour" after an accident is critical, yet accidents in remote areas often go unreported. Standard helmets provide passive protection but cannot actively alert anyone. 
 
 **Project Objectives:**
@@ -18,7 +18,7 @@ Road traffic accidents remain a leading cause of mortality, particularly for two
 
 ---
 
-## 🚀 System Architecture & Logic
+## System Architecture & Logic
 
 The system continuously samples kinematic data and processes it using the following logic:
 
@@ -33,11 +33,11 @@ The system continuously samples kinematic data and processes it using the follow
                  │
                  ▼
     [ OUTPUT ]  Dual Alert: Red LED (Pin 8) + Active Buzzer (Pin 9)
-                💥 Duration: 2.5s -> Auto-Reset back to Monitoring
+                Duration: 2.5s -> Auto-Reset back to Monitoring
 
 ---
 
-## 📐 Hardware Components & Wiring
+## Hardware Components & Wiring
 
 | Component | Pin / Terminal | Connected To (Arduino Uno) | Signal / Role |
 | :--- | :--- | :--- | :--- |
@@ -51,11 +51,11 @@ The system continuously samples kinematic data and processes it using the follow
 | **Red LED** | Anode (+) | Pin 8 (via 220Ω resistor) | Digital Output (Visual Alert) |
 | **Red LED** | Cathode (−) | GND Directly | Common Ground |
 
-> ⚠️ **Note:** For laboratory debugging, the system runs reliably via a USB connection. For untethered field deployment, a standard 9V battery can be attached to the Arduino barrel jack.
+> **Note:** For laboratory debugging, the system runs reliably via a USB connection. For untethered field deployment, a standard 9V battery can be attached to the Arduino barrel jack.
 
 ---
 
-## 💻 Software Setup
+## Software Setup
 
 ### Prerequisites
 1. Download and install the [Arduino IDE 2.x](https://www.arduino.cc/en/software).
@@ -73,7 +73,7 @@ The system continuously samples kinematic data and processes it using the follow
 
 ---
 
-## 🧪 Testing Protocol & Results
+## Testing Protocol & Results
 
 Follow these bench-testing steps to verify correct execution:
 
@@ -86,14 +86,14 @@ Follow these bench-testing steps to verify correct execution:
 
 ---
 
-## 🌍 Real-World Applications
+## Real-World Applications
 * **Road Safety:** Primary application for motorcycle, scooter, and bicycle riders to reduce response times during accidents.
 * **Industrial & Mining Safety:** Wearable tech for workers in hazardous environments where occupational fall risks are high.
 * **Elderly Care:** Adaptation for individuals prone to balance loss or sudden collapse.
 
 ---
 
-## 🔮 Future Enhancements
+## Future Enhancements
 * **Remote GSM/GPS Alerts:** Integrating a **SIM800L GSM module** and a **GPS tracker** to automatically send cellular SOS texts with live map coordinates to emergency contacts upon accident confirmation.
 * **Sensor Fusion Filtering:** Implementing a **Complementary or Kalman Filter** that pairs both accelerometer and gyroscope telemetry to mitigate dynamic-braking tilt errors.
 * **Bluetooth App Integration:** Pairing an HC-05 Bluetooth module with a companion Android/iOS app to provide push notifications, ride analytics, and remote monitoring.
